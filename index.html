@@ -4,35 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>마스크 판매현황</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-html{height:100%;font-size:62.5%;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;}
-body{height:100%;font:normal 1.5rem/2.2rem 'notokr','Noto Sans KR','Noto Sans','Apple SD Gothic Neo',Helvetica,Sans-serif;font-weight:400;color:#535353;letter-spacing:-0.5px;word-break:keep-all;-webkit-text-size-adjust:none;vertical-align:baseline;text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-html.ios body{font-family:'Apple SD Gothic Neo',Helvetica,Sans-serif;}
-a{color:inherit;text-decoration:none;}
-.button{position:relative;display:inline-block;text-align:center;cursor:pointer;border:1px solid #ddd;height:35px;line-height:33px;padding:0 10px;font-size:1.4rem;border-radius:8px;-webkit-appearance:none;overflow:hidden;vertical-align:middle;font-weight:400;}
-
-.tabmenu{position:relative;overflow:hidden;height:40px;padding:5px 0;}
-.tabmenu ul{white-space:nowrap;font-size:0;padding:0 16px;overflow:auto;}
-.tabmenu ul li{display:inline-block;vertical-align:top;padding:0 4px;}
-.tabmenu ul li a{display:block;line-height:28px;padding:0 14px;border:1px solid #e2e2e2;color:#767676;font-size:1.4rem;border-radius:15px;}
-.tabmenu ul li.active a,
-.tabmenu ul li a.on{background-color:#1a1a1a;color:#fff;font-weight:bold;}
-.input{width:100%;height:35px;border-width:0 0 1px 0;border-style:solid;border-color:#c2c4c6;font-size:1.4rem;font-weight:500;color:#252525;vertical-align:middle;-webkit-transition:border 0.3s;transition:border 0.3s;outline:none;}
-.input:focus{border-color:#1a1a1a}
-.input_tbl{display:table;width:100%;table-layout:fixed;}
-.input_tbl .td{display:table-cell;position:relative;vertical-align:middle}
-.input_tbl .td+.td{padding-left:5px;}
-.input_tbl .td.btn{width:110px;text-align:right;}
-.input_tbl .td.btn .button{width:45px;padding-left:0;padding-right:0;}
-.tab_panel{display:none;padding:0 20px;}
-.tab_panel.active{display:block;}
-.iframe{display:block;width:100%;margin-top:10px;height:calc(100vh - 90px);}
-    </style>
 </head>
 <body>
     <div class="tabmenu js_tab">
@@ -48,95 +24,115 @@ a{color:inherit;text-decoration:none;}
             <li><a href="#tabCont9"><span>국대마스크</span></a></li>
         </ul>
     </div>
-    <div id="tabCont1" class="tab_panel">
-        <div class="input_tbl">
-            <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/sangkong/products/4762917002"></div>
-            <div class="td btn">
-                <a href="#" class="button btn_reload">확인</a>
-                <a href="#" class="button btn_link">이동</a>
+    <div class="tab_panel_wrap">
+        <div id="tabCont1" class="tab_panel">
+            <div class="input_tbl_wrap">
+                <div class="input_tbl">
+                    <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/sangkong/products/4762917002"></div>
+                    <div class="td btn">
+                        <a href="#" class="button btn_reload">확인</a>
+                        <a href="#" class="button btn_link">이동</a>
+                    </div>
+                </div>
             </div>
+            <iframe src="" frameborder="0" class="iframe"></iframe>
         </div>
-        <iframe src="" frameborder="0" class="iframe"></iframe>
-    </div>
-    <div id="tabCont2" class="tab_panel">
-        <div class="input_tbl">
-            <div class="td"><input type="text" class="input" value="http://www.welkeepsmall.com/m/product_list.html?xcode=023&type=X&sort=&mcode=001"></div>
-            <div class="td btn">
+        <div id="tabCont2" class="tab_panel">
+            <div class="input_tbl_wrap">
+                <div class="input_tbl">
+                    <div class="td"><input type="text" class="input" value="http://www.welkeepsmall.com/m/product_list.html?xcode=023&type=X&sort=&mcode=001"></div>
+                    <div class="td btn">
+                            <a href="#" class="button btn_reload">확인</a>
+                            <a href="#" class="button btn_link">이동</a>
+                    </div>
+                </div>
+            </div>
+            <iframe src="" frameborder="0" class="iframe"></iframe>
+        </div>
+        <div id="tabCont3" class="tab_panel">
+            <div class="input_tbl_wrap">
+                <div class="input_tbl">
+                    <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/mfbshop/products/4072435942?NaPm="></div>
+                    <div class="td btn">
+                        <a href="#" class="button btn_reload">확인</a>
+                        <a href="#" class="button btn_link">이동</a>
+                    </div>
+                </div>
+            </div>
+            <iframe src="" frameborder="0" class="iframe"></iframe>
+        </div>
+        <div id="tabCont4" class="tab_panel">
+            <div class="input_tbl_wrap">
+                <div class="input_tbl">
+                    <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/mfbshop/products/4072573492"></div>
+                    <div class="td btn">
+                        <a href="#" class="button btn_reload">확인</a>
+                        <a href="#" class="button btn_link">이동</a>
+                    </div>
+                </div>
+            </div>
+            <iframe src="" frameborder="0" class="iframe"></iframe>
+        </div>
+        <div id="tabCont5" class="tab_panel">
+            <div class="input_tbl_wrap">
+                <div class="input_tbl">
+                    <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/gonggami/products/4705579501"></div>
+                    <div class="td btn">
+                        <a href="#" class="button btn_reload">확인</a>
+                        <a href="#" class="button btn_link">이동</a>
+                    </div>
+                </div>
+            </div>
+            <iframe src="" frameborder="0" class="iframe"></iframe>
+        </div>
+        <div id="tabCont6" class="tab_panel">
+            <div class="input_tbl_wrap">
+                <div class="input_tbl">
+                    <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/soommask/products/4828127993?NaPm=#DEFAULT"></div>
+                    <div class="td btn">
+                        <a href="#" class="button btn_reload">확인</a>
+                        <a href="#" class="button btn_link">이동</a>
+                    </div>
+                </div>
+            </div>
+            <iframe src="" frameborder="0" class="iframe"></iframe>
+        </div>
+        <div id="tabCont7" class="tab_panel">
+            <div class="input_tbl_wrap">
+                <div class="input_tbl">
+                    <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/dkpharm_naturesvitamin/products/4810907388"></div>
+                    <div class="td btn">
+                        <a href="#" class="button btn_reload">확인</a>
+                        <a href="#" class="button btn_link">이동</a>
+                    </div>
+                </div>
+            </div>
+            <iframe src="" frameborder="0" class="iframe"></iframe>
+        </div>
+        <div id="tabCont8" class="tab_panel">
+            <div class="input_tbl_wrap">
+            <div class="input_tbl">
+                <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/kumaelectron/products/4754238400"></div>
+                <div class="td btn">
                     <a href="#" class="button btn_reload">확인</a>
                     <a href="#" class="button btn_link">이동</a>
+                </div>
             </div>
         </div>
-        <iframe src="" frameborder="0" class="iframe"></iframe>
-    </div>
-    <div id="tabCont3" class="tab_panel">
-        <div class="input_tbl">
-            <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/mfbshop/products/4072435942?NaPm="></div>
-            <div class="td btn">
-                <a href="#" class="button btn_reload">확인</a>
-                <a href="#" class="button btn_link">이동</a>
-            </div>
+            <iframe src="" frameborder="0" class="iframe"></iframe>
         </div>
-        <iframe src="" frameborder="0" class="iframe"></iframe>
-    </div>
-    <div id="tabCont4" class="tab_panel">
-        <div class="input_tbl">
-            <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/mfbshop/products/4072573492"></div>
-            <div class="td btn">
-                <a href="#" class="button btn_reload">확인</a>
-                <a href="#" class="button btn_link">이동</a>
+        <div id="tabCont9" class="tab_panel">
+            <div class="input_tbl_wrap">
+                <div class="input_tbl">
+                    <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/korea-mask/products/4825762296"></div>
+                    <div class="td btn">
+                        <a href="#" class="button btn_reload">확인</a>
+                        <a href="#" class="button btn_link">이동</a>
+                    </div>
+                </div>
             </div>
+            <iframe src="" frameborder="0" class="iframe"></iframe>
         </div>
-        <iframe src="" frameborder="0" class="iframe"></iframe>
-    </div>
-    <div id="tabCont5" class="tab_panel">
-        <div class="input_tbl">
-            <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/gonggami/products/4705579501"></div>
-            <div class="td btn">
-                <a href="#" class="button btn_reload">확인</a>
-                <a href="#" class="button btn_link">이동</a>
-            </div>
-        </div>
-        <iframe src="" frameborder="0" class="iframe"></iframe>
-    </div>
-    <div id="tabCont6" class="tab_panel">
-        <div class="input_tbl">
-            <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/soommask/products/4828127993?NaPm=#DEFAULT"></div>
-            <div class="td btn">
-                <a href="#" class="button btn_reload">확인</a>
-                <a href="#" class="button btn_link">이동</a>
-            </div>
-        </div>
-        <iframe src="" frameborder="0" class="iframe"></iframe>
-    </div>
-    <div id="tabCont7" class="tab_panel">
-        <div class="input_tbl">
-            <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/dkpharm_naturesvitamin/products/4810907388"></div>
-            <div class="td btn">
-                <a href="#" class="button btn_reload">확인</a>
-                <a href="#" class="button btn_link">이동</a>
-            </div>
-        </div>
-        <iframe src="" frameborder="0" class="iframe"></iframe>
-    </div>
-    <div id="tabCont8" class="tab_panel">
-        <div class="input_tbl">
-            <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/kumaelectron/products/4754238400"></div>
-            <div class="td btn">
-                <a href="#" class="button btn_reload">확인</a>
-                <a href="#" class="button btn_link">이동</a>
-            </div>
-        </div>
-        <iframe src="" frameborder="0" class="iframe"></iframe>
-    </div>
-    <div id="tabCont9" class="tab_panel">
-        <div class="input_tbl">
-            <div class="td"><input type="text" class="input" value="https://m.smartstore.naver.com/korea-mask/products/4825762296"></div>
-            <div class="td btn">
-                <a href="#" class="button btn_reload">확인</a>
-                <a href="#" class="button btn_link">이동</a>
-            </div>
-        </div>
-        <iframe src="" frameborder="0" class="iframe"></iframe>
     </div>
 </body>
 </html>

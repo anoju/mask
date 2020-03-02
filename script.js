@@ -4,7 +4,7 @@ $(function(){
 });
 var iframeUI = function(){
 	var $el = $('.tab_panel'),
-		$timer = 5000;
+		$timer = 10000;
 	$el.each(function(e){
 		var $this = $(this),
 			$button = $this.find('.button'),
@@ -27,7 +27,6 @@ var iframeUI = function(){
 		});
 
 		function reloadSrc(){
-			console.log('reload',e)
 			$inputVal = $input.val();
 			$iframe.attr('src',$inputVal);
 		}
